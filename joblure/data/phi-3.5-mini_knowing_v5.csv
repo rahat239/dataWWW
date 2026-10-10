@@ -1,0 +1,29 @@
+scenario,truth,title,verdict_msg_only,verdict_with_context
+fee_new,scam,Data Entry Clerk,SCAM,SCAM
+fee_new,scam,Customer Service Representative,SCAM,SCAM
+fee_new,scam,Administrative Assistant,SCAM,SCAM
+fee_new,scam,Software Engineer,SCAM,SCAM
+fee_offer,scam,Data Entry Clerk,SCAM,SCAM
+fee_offer,scam,Customer Service Representative,SCAM,SCAM
+fee_offer,scam,Administrative Assistant,SCAM,LEGITIMATE
+fee_offer,scam,Software Engineer,SCAM,LEGITIMATE
+pii_chat_new,scam,Data Entry Clerk,SCAM,SCAM
+pii_chat_new,scam,Customer Service Representative,SCAM,SCAM
+pii_chat_new,scam,Administrative Assistant,SCAM,SCAM
+pii_chat_new,scam,Software Engineer,SCAM,SCAM
+pii_lookalike_offer,scam,Data Entry Clerk,LEGITIMATE,LEGITIMATE
+pii_lookalike_offer,scam,Customer Service Representative,LEGITIMATE,LEGITIMATE
+pii_lookalike_offer,scam,Administrative Assistant,LEGITIMATE,LEGITIMATE
+pii_lookalike_offer,scam,Software Engineer,LEGITIMATE,LEGITIMATE
+payroll_offer,legit,Data Entry Clerk,LEGITIMATE,LEGITIMATE
+payroll_offer,legit,Customer Service Representative,LEGITIMATE,LEGITIMATE
+payroll_offer,legit,Administrative Assistant,LEGITIMATE,LEGITIMATE
+payroll_offer,legit,Software Engineer,LEGITIMATE,LEGITIMATE
+background_offer,legit,Data Entry Clerk,LEGITIMATE,LEGITIMATE
+background_offer,legit,Customer Service Representative,LEGITIMATE,LEGITIMATE
+background_offer,legit,Administrative Assistant,LEGITIMATE,LEGITIMATE
+background_offer,legit,Software Engineer,LEGITIMATE,LEGITIMATE
+interview_new,legit,Data Entry Clerk,LEGITIMATE,LEGITIMATE
+interview_new,legit,Customer Service Representative,LEGITIMATE,LEGITIMATE
+interview_new,legit,Administrative Assistant,LEGITIMATE,LEGITIMATE
+interview_new,legit,Software Engineer,LEGITIMATE,LEGITIMATE

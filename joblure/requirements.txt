@@ -1,0 +1,10 @@
+# analysis (CPU)
+numpy>=1.24
+pandas>=2.0
+scipy>=1.10
+matplotlib>=3.7
+# experiments (GPU)
+torch>=2.1
+transformers>=4.44
+accelerate>=0.33
+bitsandbytes>=0.43   # only for 4-bit runs (Qwen2.5-14B)
