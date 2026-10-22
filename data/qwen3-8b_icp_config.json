@@ -1,0 +1,99 @@
+{
+  "model": "Qwen/Qwen3-8B",
+  "config": {
+    "model_hint": "qwen3",
+    "model_path": "Qwen/Qwen3-8B",
+    "backend": "hf",
+    "data_path": "auto",
+    "seed": 42,
+    "n_scam": 60,
+    "n_legit": 180,
+    "reps": 8,
+    "max_steps": 5,
+    "max_new_tokens": 220,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "hf_batch_size": 8,
+    "dtype": "auto",
+    "desc_chars": 600,
+    "out_root": "results",
+    "conditions": [
+      "neutral",
+      "msg_gate",
+      "policy_gate",
+      "hybrid_plus"
+    ],
+    "parts": [
+      "hard",
+      "t07",
+      "icp"
+    ],
+    "ats_conditions": [
+      "neutral",
+      "hybrid_plus",
+      "hybrid_plus_ats"
+    ],
+    "prompt_conditions": [
+      "neutral_p2",
+      "neutral_p3"
+    ],
+    "real_neutral_conditions": [
+      "neutral",
+      "policy_gate",
+      "hybrid_plus"
+    ],
+    "real_neutral_reps": 1,
+    "real_messages_file": "auto",
+    "trial_seed_offset": 23,
+    "real_conditions": [
+      "neutral",
+      "policy_gate",
+      "hybrid_plus"
+    ],
+    "real_reps": 2,
+    "hf_token_secret": "HF_TOKEN",
+    "quant": null,
+    "adaptive_conditions": [
+      "neutral",
+      "policy_gate",
+      "hybrid_plus",
+      "indicator_gate"
+    ],
+    "adaptive_reps": 8,
+    "probes_t07_k": 5,
+    "study": "icp",
+    "max_minutes": 660,
+    "model_runs": [
+      {
+        "model_path": "microsoft/Phi-3.5-mini-instruct",
+        "model_hint": "phi",
+        "quant": null
+      },
+      {
+        "model_path": "Qwen/Qwen2.5-7B-Instruct",
+        "model_hint": "qwen2.5-7b",
+        "quant": null
+      },
+      {
+        "model_path": "ibm-granite/granite-3.1-8b-instruct",
+        "model_hint": "granite",
+        "quant": null
+      },
+      {
+        "model_path": "Qwen/Qwen3-8B",
+        "model_hint": "qwen3",
+        "quant": null
+      },
+      {
+        "model_path": "auto",
+        "model_hint": "gemma-2",
+        "quant": null
+      },
+      {
+        "model_path": "Qwen/Qwen2.5-14B-Instruct",
+        "model_hint": "qwen2.5-14b",
+        "quant": "4bit"
+      }
+    ]
+  }
+}

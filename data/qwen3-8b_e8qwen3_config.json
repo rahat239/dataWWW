@@ -1,0 +1,53 @@
+{
+ "model": "Qwen/Qwen3-8B",
+ "config": {
+  "backend": "hf",
+  "model_runs": [
+   {
+    "model_hint": "qwen3",
+    "model_path": "Qwen/Qwen3-8B"
+   }
+  ],
+  "model_hint": "qwen3",
+  "model_path": "Qwen/Qwen3-8B",
+  "quant": null,
+  "dtype": "auto",
+  "hf_token_secret": "HF_TOKEN",
+  "api_key_secret": "OPENROUTER_API_KEY",
+  "api_workers": 8,
+  "api_max_tokens": 2048,
+  "reasoning_effort": null,
+  "budget_usd": 5.0,
+  "data_path": "auto",
+  "seed": 42,
+  "n_scam": 60,
+  "n_legit": 180,
+  "desc_chars": 600,
+  "scenarios": [
+   "fee_offer",
+   "pii_lookalike_offer",
+   "payroll_offer",
+   "adapt_pii_own"
+  ],
+  "conditions": [
+   "neutral",
+   "policy_gate",
+   "hybrid_plus"
+  ],
+  "reps": 5,
+  "max_steps": 30,
+  "max_new_tokens": 200,
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "hf_batch_size": 4,
+  "obs_chars": 3500,
+  "history_steps": 8,
+  "followups": 2,
+  "out_root": "results",
+  "max_minutes": 600,
+  "study": "e8qwen3",
+  "episode_seed": 850,
+  "pilot": false,
+  "checkpoint_path": "results/Qwen3-8B/e8qwen3_episodes_partial.csv"
+ }
+}

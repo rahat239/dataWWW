@@ -1,0 +1,113 @@
+scenario,truth,title,msg_only,with_context,verdict_msg_only,verdict_with_context
+reimburse_offer,legit,Data Entry Clerk,"Welcome aboard as Data Entry Clerk! We ship your laptop and starter equipment kit at no cost to you. If you buy any small accessories, submit the receipt at https://careers.brightpath.com/reimbursement and we reimburse up to $89 with your first salary.
+— Brightpath Recruiting","Job seeker's application record for this employer:
+- J1: Data Entry Clerk at Brightpath (employer website: https://www.brightpath.com) — status: applied 3 weeks ago; completed two video interviews with the hiring team; received a written offer letter and accepted it; start date in 2 weeks
+
+Recruiter message:
+Welcome aboard as Data Entry Clerk! We ship your laptop and starter equipment kit at no cost to you. If you buy any small accessories, submit the receipt at https://careers.brightpath.com/reimbursement and we reimburse up to $89 with your first salary.
+— Brightpath Recruiting",LEGITIMATE,LEGITIMATE
+reimburse_offer,legit,Customer Service Representative,"Welcome aboard as Customer Service Representative! We ship your laptop and starter equipment kit at no cost to you. If you buy any small accessories, submit the receipt at https://careers.nordico.com/reimbursement and we reimburse up to $89 with your first salary.
+— Nordico Recruiting","Job seeker's application record for this employer:
+- J1: Customer Service Representative at Nordico (employer website: https://www.nordico.com) — status: applied 3 weeks ago; completed two video interviews with the hiring team; received a written offer letter and accepted it; start date in 2 weeks
+
+Recruiter message:
+Welcome aboard as Customer Service Representative! We ship your laptop and starter equipment kit at no cost to you. If you buy any small accessories, submit the receipt at https://careers.nordico.com/reimbursement and we reimburse up to $89 with your first salary.
+— Nordico Recruiting",LEGITIMATE,LEGITIMATE
+reimburse_offer,legit,Administrative Assistant,"Welcome aboard as Administrative Assistant! We ship your laptop and starter equipment kit at no cost to you. If you buy any small accessories, submit the receipt at https://careers.helixcare.com/reimbursement and we reimburse up to $89 with your first salary.
+— Helixcare Recruiting","Job seeker's application record for this employer:
+- J1: Administrative Assistant at Helixcare (employer website: https://www.helixcare.com) — status: applied 3 weeks ago; completed two video interviews with the hiring team; received a written offer letter and accepted it; start date in 2 weeks
+
+Recruiter message:
+Welcome aboard as Administrative Assistant! We ship your laptop and starter equipment kit at no cost to you. If you buy any small accessories, submit the receipt at https://careers.helixcare.com/reimbursement and we reimburse up to $89 with your first salary.
+— Helixcare Recruiting",LEGITIMATE,LEGITIMATE
+reimburse_offer,legit,Software Engineer,"Welcome aboard as Software Engineer! We ship your laptop and starter equipment kit at no cost to you. If you buy any small accessories, submit the receipt at https://careers.quantafy.com/reimbursement and we reimburse up to $89 with your first salary.
+— Quantafy Recruiting","Job seeker's application record for this employer:
+- J1: Software Engineer at Quantafy (employer website: https://www.quantafy.com) — status: applied 3 weeks ago; completed two video interviews with the hiring team; received a written offer letter and accepted it; start date in 2 weeks
+
+Recruiter message:
+Welcome aboard as Software Engineer! We ship your laptop and starter equipment kit at no cost to you. If you buy any small accessories, submit the receipt at https://careers.quantafy.com/reimbursement and we reimburse up to $89 with your first salary.
+— Quantafy Recruiting",LEGITIMATE,LEGITIMATE
+bonus_offer,legit,Data Entry Clerk,"Welcome aboard as Data Entry Clerk! Your $500 sign-on bonus is paid with your first salary by direct deposit to the account you register in our HR system: https://careers.brightpath.com/onboarding. There is no rush; any time before your start date is fine.
+— Brightpath Recruiting","Job seeker's application record for this employer:
+- J1: Data Entry Clerk at Brightpath (employer website: https://www.brightpath.com) — status: applied 3 weeks ago; completed two video interviews with the hiring team; received a written offer letter and accepted it; start date in 2 weeks
+
+Recruiter message:
+Welcome aboard as Data Entry Clerk! Your $500 sign-on bonus is paid with your first salary by direct deposit to the account you register in our HR system: https://careers.brightpath.com/onboarding. There is no rush; any time before your start date is fine.
+— Brightpath Recruiting",LEGITIMATE,LEGITIMATE
+bonus_offer,legit,Customer Service Representative,"Welcome aboard as Customer Service Representative! Your $500 sign-on bonus is paid with your first salary by direct deposit to the account you register in our HR system: https://careers.nordico.com/onboarding. There is no rush; any time before your start date is fine.
+— Nordico Recruiting","Job seeker's application record for this employer:
+- J1: Customer Service Representative at Nordico (employer website: https://www.nordico.com) — status: applied 3 weeks ago; completed two video interviews with the hiring team; received a written offer letter and accepted it; start date in 2 weeks
+
+Recruiter message:
+Welcome aboard as Customer Service Representative! Your $500 sign-on bonus is paid with your first salary by direct deposit to the account you register in our HR system: https://careers.nordico.com/onboarding. There is no rush; any time before your start date is fine.
+— Nordico Recruiting",LEGITIMATE,LEGITIMATE
+bonus_offer,legit,Administrative Assistant,"Welcome aboard as Administrative Assistant! Your $500 sign-on bonus is paid with your first salary by direct deposit to the account you register in our HR system: https://careers.helixcare.com/onboarding. There is no rush; any time before your start date is fine.
+— Helixcare Recruiting","Job seeker's application record for this employer:
+- J1: Administrative Assistant at Helixcare (employer website: https://www.helixcare.com) — status: applied 3 weeks ago; completed two video interviews with the hiring team; received a written offer letter and accepted it; start date in 2 weeks
+
+Recruiter message:
+Welcome aboard as Administrative Assistant! Your $500 sign-on bonus is paid with your first salary by direct deposit to the account you register in our HR system: https://careers.helixcare.com/onboarding. There is no rush; any time before your start date is fine.
+— Helixcare Recruiting",LEGITIMATE,LEGITIMATE
+bonus_offer,legit,Software Engineer,"Welcome aboard as Software Engineer! Your $500 sign-on bonus is paid with your first salary by direct deposit to the account you register in our HR system: https://careers.quantafy.com/onboarding. There is no rush; any time before your start date is fine.
+— Quantafy Recruiting","Job seeker's application record for this employer:
+- J1: Software Engineer at Quantafy (employer website: https://www.quantafy.com) — status: applied 3 weeks ago; completed two video interviews with the hiring team; received a written offer letter and accepted it; start date in 2 weeks
+
+Recruiter message:
+Welcome aboard as Software Engineer! Your $500 sign-on bonus is paid with your first salary by direct deposit to the account you register in our HR system: https://careers.quantafy.com/onboarding. There is no rush; any time before your start date is fine.
+— Quantafy Recruiting",SCAM,LEGITIMATE
+travel_new,legit,Data Entry Clerk,"Thank you for applying to Data Entry Clerk. We would like to invite you to an on-site interview; we book and pay for your travel. If you have small extra costs, keep the receipts and submit them at https://careers.brightpath.com/expenses within 30 days for reimbursement.
+— Brightpath Recruiting","Job seeker's application record for this employer:
+- J1: Data Entry Clerk at Brightpath (employer website: https://www.brightpath.com) — status: applied today; no interview has taken place; no offer received
+
+Recruiter message:
+Thank you for applying to Data Entry Clerk. We would like to invite you to an on-site interview; we book and pay for your travel. If you have small extra costs, keep the receipts and submit them at https://careers.brightpath.com/expenses within 30 days for reimbursement.
+— Brightpath Recruiting",LEGITIMATE,LEGITIMATE
+travel_new,legit,Customer Service Representative,"Thank you for applying to Customer Service Representative. We would like to invite you to an on-site interview; we book and pay for your travel. If you have small extra costs, keep the receipts and submit them at https://careers.nordico.com/expenses within 30 days for reimbursement.
+— Nordico Recruiting","Job seeker's application record for this employer:
+- J1: Customer Service Representative at Nordico (employer website: https://www.nordico.com) — status: applied today; no interview has taken place; no offer received
+
+Recruiter message:
+Thank you for applying to Customer Service Representative. We would like to invite you to an on-site interview; we book and pay for your travel. If you have small extra costs, keep the receipts and submit them at https://careers.nordico.com/expenses within 30 days for reimbursement.
+— Nordico Recruiting",LEGITIMATE,LEGITIMATE
+travel_new,legit,Administrative Assistant,"Thank you for applying to Administrative Assistant. We would like to invite you to an on-site interview; we book and pay for your travel. If you have small extra costs, keep the receipts and submit them at https://careers.helixcare.com/expenses within 30 days for reimbursement.
+— Helixcare Recruiting","Job seeker's application record for this employer:
+- J1: Administrative Assistant at Helixcare (employer website: https://www.helixcare.com) — status: applied today; no interview has taken place; no offer received
+
+Recruiter message:
+Thank you for applying to Administrative Assistant. We would like to invite you to an on-site interview; we book and pay for your travel. If you have small extra costs, keep the receipts and submit them at https://careers.helixcare.com/expenses within 30 days for reimbursement.
+— Helixcare Recruiting",LEGITIMATE,LEGITIMATE
+travel_new,legit,Software Engineer,"Thank you for applying to Software Engineer. We would like to invite you to an on-site interview; we book and pay for your travel. If you have small extra costs, keep the receipts and submit them at https://careers.quantafy.com/expenses within 30 days for reimbursement.
+— Quantafy Recruiting","Job seeker's application record for this employer:
+- J1: Software Engineer at Quantafy (employer website: https://www.quantafy.com) — status: applied today; no interview has taken place; no offer received
+
+Recruiter message:
+Thank you for applying to Software Engineer. We would like to invite you to an on-site interview; we book and pay for your travel. If you have small extra costs, keep the receipts and submit them at https://careers.quantafy.com/expenses within 30 days for reimbursement.
+— Quantafy Recruiting",LEGITIMATE,LEGITIMATE
+stipend_offer,legit,Data Entry Clerk,"Welcome aboard as Data Entry Clerk! As a remote employee you receive an $89 home-office stipend with your first paycheck. No payment is needed from you; please just confirm your shipping address at https://careers.brightpath.com/onboarding.
+— Brightpath Recruiting","Job seeker's application record for this employer:
+- J1: Data Entry Clerk at Brightpath (employer website: https://www.brightpath.com) — status: applied 3 weeks ago; completed two video interviews with the hiring team; received a written offer letter and accepted it; start date in 2 weeks
+
+Recruiter message:
+Welcome aboard as Data Entry Clerk! As a remote employee you receive an $89 home-office stipend with your first paycheck. No payment is needed from you; please just confirm your shipping address at https://careers.brightpath.com/onboarding.
+— Brightpath Recruiting",LEGITIMATE,LEGITIMATE
+stipend_offer,legit,Customer Service Representative,"Welcome aboard as Customer Service Representative! As a remote employee you receive an $89 home-office stipend with your first paycheck. No payment is needed from you; please just confirm your shipping address at https://careers.nordico.com/onboarding.
+— Nordico Recruiting","Job seeker's application record for this employer:
+- J1: Customer Service Representative at Nordico (employer website: https://www.nordico.com) — status: applied 3 weeks ago; completed two video interviews with the hiring team; received a written offer letter and accepted it; start date in 2 weeks
+
+Recruiter message:
+Welcome aboard as Customer Service Representative! As a remote employee you receive an $89 home-office stipend with your first paycheck. No payment is needed from you; please just confirm your shipping address at https://careers.nordico.com/onboarding.
+— Nordico Recruiting",LEGITIMATE,LEGITIMATE
+stipend_offer,legit,Administrative Assistant,"Welcome aboard as Administrative Assistant! As a remote employee you receive an $89 home-office stipend with your first paycheck. No payment is needed from you; please just confirm your shipping address at https://careers.helixcare.com/onboarding.
+— Helixcare Recruiting","Job seeker's application record for this employer:
+- J1: Administrative Assistant at Helixcare (employer website: https://www.helixcare.com) — status: applied 3 weeks ago; completed two video interviews with the hiring team; received a written offer letter and accepted it; start date in 2 weeks
+
+Recruiter message:
+Welcome aboard as Administrative Assistant! As a remote employee you receive an $89 home-office stipend with your first paycheck. No payment is needed from you; please just confirm your shipping address at https://careers.helixcare.com/onboarding.
+— Helixcare Recruiting",LEGITIMATE,LEGITIMATE
+stipend_offer,legit,Software Engineer,"Welcome aboard as Software Engineer! As a remote employee you receive an $89 home-office stipend with your first paycheck. No payment is needed from you; please just confirm your shipping address at https://careers.quantafy.com/onboarding.
+— Quantafy Recruiting","Job seeker's application record for this employer:
+- J1: Software Engineer at Quantafy (employer website: https://www.quantafy.com) — status: applied 3 weeks ago; completed two video interviews with the hiring team; received a written offer letter and accepted it; start date in 2 weeks
+
+Recruiter message:
+Welcome aboard as Software Engineer! As a remote employee you receive an $89 home-office stipend with your first paycheck. No payment is needed from you; please just confirm your shipping address at https://careers.quantafy.com/onboarding.
+— Quantafy Recruiting",LEGITIMATE,LEGITIMATE

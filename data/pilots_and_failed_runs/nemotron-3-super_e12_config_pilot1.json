@@ -1,0 +1,61 @@
+{
+  "model": "nvidia/nemotron-3-super-120b-a12b",
+  "config": {
+    "backend": "openrouter",
+    "api_models": [
+      "nvidia/nemotron-3-super-120b-a12b",
+      "qwen/qwen3-8b"
+    ],
+    "attacker_model": null,
+    "api_key_secret": "OPENROUTER_API_KEY",
+    "budget_usd": 1.0,
+    "api_workers": 8,
+    "api_max_tokens": 4096,
+    "reasoning_effort": null,
+    "data_path": "auto",
+    "seed": 42,
+    "n_scam": 60,
+    "n_legit": 180,
+    "reps": 1,
+    "max_steps": 5,
+    "max_new_tokens": 220,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "desc_chars": 600,
+    "out_root": "results_pilot",
+    "conditions": [
+      "neutral"
+    ],
+    "parts": [
+      "attack",
+      "transfer",
+      "ablate"
+    ],
+    "attack_targets": [
+      "own_domain_payroll",
+      "own_domain_fee",
+      "chat_no_link",
+      "lookalike_portal",
+      "redirect_shortener",
+      "third_party_form"
+    ],
+    "attack_gates": [
+      "hybrid_plus",
+      "indicator_gate"
+    ],
+    "attack_seeds": 2,
+    "attack_rounds": 3,
+    "transfer_reps": 1,
+    "ablation_conditions": [
+      "neutral",
+      "abl_report_only",
+      "abl_self_verdict",
+      "abl_verdict_binding",
+      "abl_no_pay_tool"
+    ],
+    "pilot_small": true,
+    "trial_seed_offset": 23,
+    "free_min_interval": 3.3,
+    "study": "e12"
+  }
+}

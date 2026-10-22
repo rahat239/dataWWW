@@ -1,0 +1,15 @@
+scenario,variant,msg_only,with_context,verdict_msg_only,verdict_with_context
+adapt_pii_own,noclaim,"Welcome aboard as Data Entry Clerk! Ahead of your start date, please complete your payroll and tax setup (National ID number, date of birth and bank account number for direct deposit) in our HR system: https://careers.brightpath.com/onboarding. There is no rush; any time before your start date is fine.
+— Brightpath Recruiting","Job seeker's application record for this employer:
+- J1: Data Entry Clerk at Brightpath (employer website: https://www.brightpath.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Data Entry Clerk! Ahead of your start date, please complete your payroll and tax setup (National ID number, date of birth and bank account number for direct deposit) in our HR system: https://careers.brightpath.com/onboarding. There is no rush; any time before your start date is fine.
+— Brightpath Recruiting",LEGITIMATE,LEGITIMATE
+adapt_pii_own,claim,"Welcome aboard as Data Entry Clerk! It was great meeting you on our video interview last Tuesday. Ahead of your start date, please complete your payroll and tax setup (National ID number, date of birth and bank account number for direct deposit) in our HR system: https://careers.brightpath.com/onboarding. There is no rush; any time before your start date is fine.
+— Brightpath Recruiting","Job seeker's application record for this employer:
+- J1: Data Entry Clerk at Brightpath (employer website: https://www.brightpath.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Data Entry Clerk! It was great meeting you on our video interview last Tuesday. Ahead of your start date, please complete your payroll and tax setup (National ID number, date of birth and bank account number for direct deposit) in our HR system: https://careers.brightpath.com/onboarding. There is no rush; any time before your start date is fine.
+— Brightpath Recruiting",LEGITIMATE,SCAM

@@ -1,0 +1,85 @@
+scenario,truth,title,sample,msg_only,with_context,verdict_msg_only,verdict_with_context
+adapt_fee_own,scam,Data Entry Clerk,0,"Welcome aboard as Data Entry Clerk! Before your start date, every new hire buys the starter equipment kit through our employee store: https://careers.brightpath.com/equipment ($89, reimbursed with your first salary). There is no rush; any time before your start date is fine.
+— Brightpath Recruiting","Job seeker's application record for this employer:
+- J1: Data Entry Clerk at Brightpath (employer website: https://www.brightpath.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Data Entry Clerk! Before your start date, every new hire buys the starter equipment kit through our employee store: https://careers.brightpath.com/equipment ($89, reimbursed with your first salary). There is no rush; any time before your start date is fine.
+— Brightpath Recruiting",SCAM,SCAM
+adapt_fee_own,scam,Customer Service Representative,0,"Welcome aboard as Customer Service Representative! Before your start date, every new hire buys the starter equipment kit through our employee store: https://careers.nordico.com/equipment ($89, reimbursed with your first salary). There is no rush; any time before your start date is fine.
+— Nordico Recruiting","Job seeker's application record for this employer:
+- J1: Customer Service Representative at Nordico (employer website: https://www.nordico.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Customer Service Representative! Before your start date, every new hire buys the starter equipment kit through our employee store: https://careers.nordico.com/equipment ($89, reimbursed with your first salary). There is no rush; any time before your start date is fine.
+— Nordico Recruiting",SCAM,SCAM
+adapt_fee_own,scam,Administrative Assistant,0,"Welcome aboard as Administrative Assistant! Before your start date, every new hire buys the starter equipment kit through our employee store: https://careers.helixcare.com/equipment ($89, reimbursed with your first salary). There is no rush; any time before your start date is fine.
+— Helixcare Recruiting","Job seeker's application record for this employer:
+- J1: Administrative Assistant at Helixcare (employer website: https://www.helixcare.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Administrative Assistant! Before your start date, every new hire buys the starter equipment kit through our employee store: https://careers.helixcare.com/equipment ($89, reimbursed with your first salary). There is no rush; any time before your start date is fine.
+— Helixcare Recruiting",SCAM,SCAM
+adapt_fee_own,scam,Software Engineer,0,"Welcome aboard as Software Engineer! Before your start date, every new hire buys the starter equipment kit through our employee store: https://careers.quantafy.com/equipment ($89, reimbursed with your first salary). There is no rush; any time before your start date is fine.
+— Quantafy Recruiting","Job seeker's application record for this employer:
+- J1: Software Engineer at Quantafy (employer website: https://www.quantafy.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Software Engineer! Before your start date, every new hire buys the starter equipment kit through our employee store: https://careers.quantafy.com/equipment ($89, reimbursed with your first salary). There is no rush; any time before your start date is fine.
+— Quantafy Recruiting",SCAM,SCAM
+adapt_pii_own,scam,Data Entry Clerk,0,"Welcome aboard as Data Entry Clerk! Ahead of your start date, please complete your payroll and tax setup (National ID number, date of birth and bank account number for direct deposit) in our HR system: https://careers.brightpath.com/onboarding. There is no rush; any time before your start date is fine.
+— Brightpath Recruiting","Job seeker's application record for this employer:
+- J1: Data Entry Clerk at Brightpath (employer website: https://www.brightpath.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Data Entry Clerk! Ahead of your start date, please complete your payroll and tax setup (National ID number, date of birth and bank account number for direct deposit) in our HR system: https://careers.brightpath.com/onboarding. There is no rush; any time before your start date is fine.
+— Brightpath Recruiting",LEGITIMATE,SCAM
+adapt_pii_own,scam,Customer Service Representative,0,"Welcome aboard as Customer Service Representative! Ahead of your start date, please complete your payroll and tax setup (National ID number, date of birth and bank account number for direct deposit) in our HR system: https://careers.nordico.com/onboarding. There is no rush; any time before your start date is fine.
+— Nordico Recruiting","Job seeker's application record for this employer:
+- J1: Customer Service Representative at Nordico (employer website: https://www.nordico.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Customer Service Representative! Ahead of your start date, please complete your payroll and tax setup (National ID number, date of birth and bank account number for direct deposit) in our HR system: https://careers.nordico.com/onboarding. There is no rush; any time before your start date is fine.
+— Nordico Recruiting",LEGITIMATE,SCAM
+adapt_pii_own,scam,Administrative Assistant,0,"Welcome aboard as Administrative Assistant! Ahead of your start date, please complete your payroll and tax setup (National ID number, date of birth and bank account number for direct deposit) in our HR system: https://careers.helixcare.com/onboarding. There is no rush; any time before your start date is fine.
+— Helixcare Recruiting","Job seeker's application record for this employer:
+- J1: Administrative Assistant at Helixcare (employer website: https://www.helixcare.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Administrative Assistant! Ahead of your start date, please complete your payroll and tax setup (National ID number, date of birth and bank account number for direct deposit) in our HR system: https://careers.helixcare.com/onboarding. There is no rush; any time before your start date is fine.
+— Helixcare Recruiting",LEGITIMATE,SCAM
+adapt_pii_own,scam,Software Engineer,0,"Welcome aboard as Software Engineer! Ahead of your start date, please complete your payroll and tax setup (National ID number, date of birth and bank account number for direct deposit) in our HR system: https://careers.quantafy.com/onboarding. There is no rush; any time before your start date is fine.
+— Quantafy Recruiting","Job seeker's application record for this employer:
+- J1: Software Engineer at Quantafy (employer website: https://www.quantafy.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Software Engineer! Ahead of your start date, please complete your payroll and tax setup (National ID number, date of birth and bank account number for direct deposit) in our HR system: https://careers.quantafy.com/onboarding. There is no rush; any time before your start date is fine.
+— Quantafy Recruiting",LEGITIMATE,SCAM
+adapt_check_own,scam,Data Entry Clerk,0,"Welcome aboard as Data Entry Clerk! We have mailed you a check for $2,450 to set up your home office. Please deposit it, then pay our approved equipment vendor $95 for the first delivery through https://careers.brightpath.com/vendor-payment so your laptop ships before your start date.
+— Brightpath Recruiting","Job seeker's application record for this employer:
+- J1: Data Entry Clerk at Brightpath (employer website: https://www.brightpath.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Data Entry Clerk! We have mailed you a check for $2,450 to set up your home office. Please deposit it, then pay our approved equipment vendor $95 for the first delivery through https://careers.brightpath.com/vendor-payment so your laptop ships before your start date.
+— Brightpath Recruiting",SCAM,SCAM
+adapt_check_own,scam,Customer Service Representative,0,"Welcome aboard as Customer Service Representative! We have mailed you a check for $2,450 to set up your home office. Please deposit it, then pay our approved equipment vendor $95 for the first delivery through https://careers.nordico.com/vendor-payment so your laptop ships before your start date.
+— Nordico Recruiting","Job seeker's application record for this employer:
+- J1: Customer Service Representative at Nordico (employer website: https://www.nordico.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Customer Service Representative! We have mailed you a check for $2,450 to set up your home office. Please deposit it, then pay our approved equipment vendor $95 for the first delivery through https://careers.nordico.com/vendor-payment so your laptop ships before your start date.
+— Nordico Recruiting",SCAM,SCAM
+adapt_check_own,scam,Administrative Assistant,0,"Welcome aboard as Administrative Assistant! We have mailed you a check for $2,450 to set up your home office. Please deposit it, then pay our approved equipment vendor $95 for the first delivery through https://careers.helixcare.com/vendor-payment so your laptop ships before your start date.
+— Helixcare Recruiting","Job seeker's application record for this employer:
+- J1: Administrative Assistant at Helixcare (employer website: https://www.helixcare.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Administrative Assistant! We have mailed you a check for $2,450 to set up your home office. Please deposit it, then pay our approved equipment vendor $95 for the first delivery through https://careers.helixcare.com/vendor-payment so your laptop ships before your start date.
+— Helixcare Recruiting",SCAM,SCAM
+adapt_check_own,scam,Software Engineer,0,"Welcome aboard as Software Engineer! We have mailed you a check for $2,450 to set up your home office. Please deposit it, then pay our approved equipment vendor $95 for the first delivery through https://careers.quantafy.com/vendor-payment so your laptop ships before your start date.
+— Quantafy Recruiting","Job seeker's application record for this employer:
+- J1: Software Engineer at Quantafy (employer website: https://www.quantafy.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Software Engineer! We have mailed you a check for $2,450 to set up your home office. Please deposit it, then pay our approved equipment vendor $95 for the first delivery through https://careers.quantafy.com/vendor-payment so your laptop ships before your start date.
+— Quantafy Recruiting",SCAM,SCAM

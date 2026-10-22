@@ -8,3 +8,6 @@ torch>=2.1
 transformers>=4.44
 accelerate>=0.33
 bitsandbytes>=0.43   # only for 4-bit runs (Qwen2.5-14B)
+# E8 / E13 (real browser)
+playwright>=1.45
+browser-use>=0.13   # E13 only; we used 0.13.11

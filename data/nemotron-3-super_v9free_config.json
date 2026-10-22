@@ -1,0 +1,55 @@
+{
+  "model": "nvidia/nemotron-3-super-120b-a12b:free",
+  "config": {
+    "backend": "openrouter",
+    "api_models": [
+      "nvidia/nemotron-3-super-120b-a12b:free"
+    ],
+    "n_free_models": 2,
+    "model_parts": {},
+    "api_key_secret": "OPENROUTER_API_KEY",
+    "probe_only_models": [],
+    "pilot": false,
+    "budget_usd": 1.0,
+    "api_workers": 4,
+    "api_max_tokens": 4096,
+    "reasoning_effort": null,
+    "data_path": "auto",
+    "seed": 42,
+    "n_scam": 60,
+    "n_legit": 180,
+    "reps": 8,
+    "max_steps": 5,
+    "max_new_tokens": 220,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "desc_chars": 600,
+    "out_root": "results",
+    "conditions": [
+      "neutral",
+      "hybrid_plus"
+    ],
+    "parts": [
+      "probes",
+      "reps",
+      "adaptive"
+    ],
+    "paraphrase": false,
+    "trial_seed_offset": 23,
+    "real_conditions": [
+      "neutral",
+      "policy_gate",
+      "hybrid_plus"
+    ],
+    "real_reps": 2,
+    "adaptive_conditions": [
+      "neutral",
+      "policy_gate",
+      "hybrid_plus"
+    ],
+    "adaptive_reps": 8,
+    "probes_t07_k": 5,
+    "free_min_interval": 3.3,
+    "study": "v9free"
+  }
+}

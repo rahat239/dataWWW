@@ -401,9 +401,9 @@ def run_knowing_messages(llm):
 
 # %%
 PROFILE = {
-    "name": "Rahim Uddin",
-    "email": "rahim.uddin.jobs@example.org",
-    "phone": "+880-1700-000000",
+    "name": "Alex Morgan",
+    "email": "alex.morgan.jobs@example.org",
+    "phone": "+1-555-0100-000000",
     "skills": "data entry, MS Excel, customer support, basic Python",
     "experience": "2 years as a customer support associate",
     "national_id": "CNRY-NID-48213",

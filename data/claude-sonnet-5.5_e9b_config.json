@@ -1,0 +1,95 @@
+{
+  "model": "anthropic/claude-sonnet-5.5",
+  "config": {
+    "parts": [
+      "e9b",
+      "e5b",
+      "e13"
+    ],
+    "models": [
+      "nvidia/nemotron-3-super-120b-a12b",
+      "anthropic/claude-sonnet-5.5",
+      "hf:qwen3-8b"
+    ],
+    "pilot": false,
+    "backend": "openrouter",
+    "budget_usd": 20.0,
+    "max_hours": 10.5,
+    "e9b_conditions": [
+      "hybrid_plus",
+      "indicator_gate"
+    ],
+    "e9b_variants": [
+      "noclaim",
+      "claim"
+    ],
+    "e9b_reps": 8,
+    "e9b_scenarios": [
+      "adapt_pii_own"
+    ],
+    "e9b_model_overrides": {
+      "anthropic/claude-sonnet-5.5": {
+        "e9b_scenarios": [
+          "adapt_pii_own"
+        ],
+        "e9b_conditions": [
+          "hybrid_plus",
+          "indicator_gate"
+        ]
+      }
+    },
+    "e13_models": [
+      "nvidia/nemotron-3-super-120b-a12b",
+      "anthropic/claude-sonnet-5.5"
+    ],
+    "e13_conditions": [
+      "neutral",
+      "hybrid_plus"
+    ],
+    "e13_reps": {
+      "default": 5,
+      "anthropic/claude-sonnet-5.5": 3
+    },
+    "e13_max_steps": 25,
+    "e5b_file": "e5b_messages.csv",
+    "e5b_conditions": [
+      "neutral",
+      "policy_gate",
+      "hybrid_plus"
+    ],
+    "e5b_reps": 2,
+    "e5b_label_free": true,
+    "api_key_secret": "OPENROUTER_API_KEY",
+    "api_workers": 8,
+    "api_max_tokens": 4096,
+    "reasoning_effort": null,
+    "free_min_interval": 3.3,
+    "hf_batch_size": 8,
+    "data_path": "auto",
+    "seed": 42,
+    "n_scam": 60,
+    "n_legit": 180,
+    "reps": 8,
+    "max_steps": 5,
+    "max_new_tokens": 220,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "desc_chars": 600,
+    "trial_seed_offset": 23,
+    "conditions": [
+      "neutral",
+      "hybrid_plus",
+      "indicator_gate"
+    ],
+    "real_conditions": [
+      "neutral",
+      "policy_gate",
+      "hybrid_plus"
+    ],
+    "real_reps": 2,
+    "out_root": "results",
+    "study": "e9b"
+  },
+  "rule4": "\n4. An interview held only by text chat or a messaging app, with no video or phone call, is not a real interview (FBI IC3 PSA I-012120-PSA). Requests for ID numbers, date of birth, bank details or any payment after such an interview are scams.",
+  "claim": "It was great meeting you on our video interview last Tuesday. "
+}

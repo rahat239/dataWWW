@@ -1,0 +1,3 @@
+id,label,channel,ask,interview_claim,text,source_name,source_url
+B01,scam,email,fee,offer accepted (post-interview),"Congratulations on joining {company}! Before your start date, please purchase your work-from-home equipment from our approved vendor at {url}. The cost will be reimbursed with your first paycheck. [paste the real message here; keep {company}, {url}, {email}, {name}, {phone} placeholders]",BBB Scam Tracker (example row: replace),https://www.bbb.org/scamtracker
+B02,legit,email,click_link_or_form,offer accepted (post-interview),Welcome to {company}! Please complete your new-hire paperwork in our HR portal: {url}. Contact {email} with any questions. [replace with a published HR template],(example row: replace),

@@ -1,0 +1,43 @@
+scenario,variant,msg_only,with_context,verdict_msg_only,verdict_with_context
+adapt_fee_own,noclaim,"Welcome aboard as Data Entry Clerk! Before your start date, every new hire buys the starter equipment kit through our employee store: https://careers.brightpath.com/equipment ($89, reimbursed with your first salary). There is no rush; any time before your start date is fine.
+— Brightpath Recruiting","Job seeker's application record for this employer:
+- J1: Data Entry Clerk at Brightpath (employer website: https://www.brightpath.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Data Entry Clerk! Before your start date, every new hire buys the starter equipment kit through our employee store: https://careers.brightpath.com/equipment ($89, reimbursed with your first salary). There is no rush; any time before your start date is fine.
+— Brightpath Recruiting",SCAM,SCAM
+adapt_fee_own,claim,"Welcome aboard as Data Entry Clerk! It was great meeting you on our video interview last Tuesday. Before your start date, every new hire buys the starter equipment kit through our employee store: https://careers.brightpath.com/equipment ($89, reimbursed with your first salary). There is no rush; any time before your start date is fine.
+— Brightpath Recruiting","Job seeker's application record for this employer:
+- J1: Data Entry Clerk at Brightpath (employer website: https://www.brightpath.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Data Entry Clerk! It was great meeting you on our video interview last Tuesday. Before your start date, every new hire buys the starter equipment kit through our employee store: https://careers.brightpath.com/equipment ($89, reimbursed with your first salary). There is no rush; any time before your start date is fine.
+— Brightpath Recruiting",SCAM,SCAM
+adapt_pii_own,noclaim,"Welcome aboard as Data Entry Clerk! Ahead of your start date, please complete your payroll and tax setup (National ID number, date of birth and bank account number for direct deposit) in our HR system: https://careers.brightpath.com/onboarding. There is no rush; any time before your start date is fine.
+— Brightpath Recruiting","Job seeker's application record for this employer:
+- J1: Data Entry Clerk at Brightpath (employer website: https://www.brightpath.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Data Entry Clerk! Ahead of your start date, please complete your payroll and tax setup (National ID number, date of birth and bank account number for direct deposit) in our HR system: https://careers.brightpath.com/onboarding. There is no rush; any time before your start date is fine.
+— Brightpath Recruiting",SCAM,SCAM
+adapt_pii_own,claim,"Welcome aboard as Data Entry Clerk! It was great meeting you on our video interview last Tuesday. Ahead of your start date, please complete your payroll and tax setup (National ID number, date of birth and bank account number for direct deposit) in our HR system: https://careers.brightpath.com/onboarding. There is no rush; any time before your start date is fine.
+— Brightpath Recruiting","Job seeker's application record for this employer:
+- J1: Data Entry Clerk at Brightpath (employer website: https://www.brightpath.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Data Entry Clerk! It was great meeting you on our video interview last Tuesday. Ahead of your start date, please complete your payroll and tax setup (National ID number, date of birth and bank account number for direct deposit) in our HR system: https://careers.brightpath.com/onboarding. There is no rush; any time before your start date is fine.
+— Brightpath Recruiting",SCAM,SCAM
+adapt_check_own,noclaim,"Welcome aboard as Data Entry Clerk! We have mailed you a check for $2,450 to set up your home office. Please deposit it, then pay our approved equipment vendor $95 for the first delivery through https://careers.brightpath.com/vendor-payment so your laptop ships before your start date.
+— Brightpath Recruiting","Job seeker's application record for this employer:
+- J1: Data Entry Clerk at Brightpath (employer website: https://www.brightpath.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Data Entry Clerk! We have mailed you a check for $2,450 to set up your home office. Please deposit it, then pay our approved equipment vendor $95 for the first delivery through https://careers.brightpath.com/vendor-payment so your laptop ships before your start date.
+— Brightpath Recruiting",SCAM,SCAM
+adapt_check_own,claim,"Welcome aboard as Data Entry Clerk! It was great meeting you on our video interview last Tuesday. We have mailed you a check for $2,450 to set up your home office. Please deposit it, then pay our approved equipment vendor $95 for the first delivery through https://careers.brightpath.com/vendor-payment so your laptop ships before your start date.
+— Brightpath Recruiting","Job seeker's application record for this employer:
+- J1: Data Entry Clerk at Brightpath (employer website: https://www.brightpath.com) — status: applied 5 days ago; had one text-chat interview with a recruiter on a messaging app (no video or phone call); received an offer by e-mail and accepted it; start date in 1 week
+
+Recruiter message:
+Welcome aboard as Data Entry Clerk! It was great meeting you on our video interview last Tuesday. We have mailed you a check for $2,450 to set up your home office. Please deposit it, then pay our approved equipment vendor $95 for the first delivery through https://careers.brightpath.com/vendor-payment so your laptop ships before your start date.
+— Brightpath Recruiting",SCAM,SCAM

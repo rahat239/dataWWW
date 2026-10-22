@@ -1,0 +1,53 @@
+{
+ "model": "nvidia/nemotron-3-super-120b-a12b:free",
+ "config": {
+  "backend": "openrouter",
+  "model_runs": [
+   {
+    "model_path": "nvidia/nemotron-3-super-120b-a12b:free"
+   }
+  ],
+  "model_hint": "qwen",
+  "model_path": "nvidia/nemotron-3-super-120b-a12b:free",
+  "quant": null,
+  "dtype": "auto",
+  "hf_token_secret": "HF_TOKEN",
+  "api_key_secret": "OPENROUTER_API_KEY",
+  "api_workers": 4,
+  "api_max_tokens": 2048,
+  "reasoning_effort": null,
+  "budget_usd": 1.0,
+  "data_path": "auto",
+  "seed": 42,
+  "n_scam": 60,
+  "n_legit": 180,
+  "desc_chars": 600,
+  "scenarios": [
+   "fee_offer",
+   "pii_lookalike_offer",
+   "payroll_offer",
+   "adapt_pii_own"
+  ],
+  "conditions": [
+   "neutral",
+   "policy_gate",
+   "hybrid_plus"
+  ],
+  "reps": 3,
+  "max_steps": 30,
+  "max_new_tokens": 200,
+  "temperature": 0.7,
+  "top_p": 0.95,
+  "hf_batch_size": 4,
+  "obs_chars": 3500,
+  "history_steps": 8,
+  "followups": 2,
+  "out_root": "results",
+  "max_minutes": 600,
+  "study": "e8run3",
+  "free_min_interval": 3.3,
+  "episode_seed": 3850,
+  "pilot": false,
+  "checkpoint_path": "results/nemotron-3-super-120b-a12b_free/e8run3_episodes_partial.csv"
+ }
+}

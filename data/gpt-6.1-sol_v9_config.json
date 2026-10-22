@@ -1,0 +1,81 @@
+{
+  "model": "openai/gpt-6.1-sol",
+  "config": {
+    "backend": "openrouter",
+    "api_models": [
+      "openai/gpt-6.1-sol",
+      "google/gemini-3.1-pro-preview",
+      "anthropic/claude-sonnet-5.5"
+    ],
+    "model_parts": {
+      "anthropic/claude-sonnet-5.5": [
+        "real",
+        "reps",
+        "adaptive",
+        "probes_t07"
+      ],
+      "openai/gpt-6.1-sol": [
+        "probes",
+        "real_knowing",
+        "adaptive",
+        "probes_t07"
+      ],
+      "google/gemini-3.1-pro-preview": [
+        "probes",
+        "real_knowing",
+        "adaptive",
+        "probes_t07"
+      ]
+    },
+    "api_key_secret": "OPENROUTER_API_KEY",
+    "probe_only_models": [],
+    "pilot": false,
+    "budget_usd": 14.5,
+    "api_workers": 8,
+    "api_max_tokens": 4096,
+    "reasoning_effort": {
+      "anthropic/claude-sonnet-5.5": null,
+      "openai/gpt-6.1-sol": "low",
+      "google/gemini-3.1-pro-preview": "low"
+    },
+    "data_path": "auto",
+    "seed": 42,
+    "n_scam": 60,
+    "n_legit": 180,
+    "reps": 8,
+    "max_steps": 5,
+    "max_new_tokens": 220,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "desc_chars": 600,
+    "out_root": "results",
+    "conditions": [
+      "neutral",
+      "msg_gate",
+      "policy_gate",
+      "hybrid_plus"
+    ],
+    "parts": [
+      "probes",
+      "real_knowing",
+      "adaptive",
+      "probes_t07"
+    ],
+    "paraphrase": true,
+    "trial_seed_offset": 23,
+    "real_conditions": [
+      "neutral",
+      "policy_gate",
+      "hybrid_plus"
+    ],
+    "real_reps": 2,
+    "adaptive_conditions": [
+      "neutral",
+      "policy_gate",
+      "hybrid_plus"
+    ],
+    "adaptive_reps": 8,
+    "probes_t07_k": 5,
+    "study": "v9api"
+  }
+}
