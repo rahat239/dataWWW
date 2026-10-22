@@ -17,7 +17,7 @@ experiments/   one script per experiment (Jupyter-style "# %%" cells; run as a n
   e9b_e5b_e13_kaggle.ipynb        E9b (false video-interview claim vs. the FBI rule), E5b (new real messages; template in
                                   data/real_messages/), E13 (browser-use in Chromium behind a local proxy that hosts the
                                   sites and runs the hybrid+ guard on every POST). Built on e6_frontier_api.py.
-  notebooks/                      Kaggle notebooks for E3'/E7 (Nemotron), E8, E9, E10 (R'), E11, E12, ICP and R (Qwen3-8B)
+  notebooks/README.md             which data/ files hold E3'/E7, E8, E9, E10 (R'), E11, E12, ICP and R (same harness as e6)
 analysis/
   paper_stats.py                  all paper numbers -> results/stats.json, figures -> results/figures/
   reanalysis.py                   sensitivity/specificity, E1/E2 clear-scam cells, E5 conditional and payee split,
