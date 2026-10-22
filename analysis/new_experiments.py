@@ -131,7 +131,7 @@ out("E12", "Nemotron scam harm neutral vs self-verdict (Fisher)",
 # ---------------- E13: browser-use -----------------------------------------------------------------------------
 e13 = r(f"{NEM}_e13_episodes.csv")
 t = e13.assign(v=e13.harm.where(e13.truth == "scam", e13.onboarding_done))
-out("E13", "Nemotron in browser-use: harm (scams) / onboarding (payroll), of 5",
+out("E13", "HTTP run, Nemotron in browser-use: harm (scams) / onboarding (payroll), of 5",
     t.pivot_table(index="condition", columns="scenario", values="v", aggfunc="sum").to_dict("index"))
 fl = e13[e13.scenario.isin(["fee_offer", "lookalike"])]
 a0, a1 = fl[fl.condition == "neutral"], fl[fl.condition == "hybrid_plus"]
@@ -139,10 +139,21 @@ out("E13", "fee + look-alike harm none vs hyb+ (Fisher)",
     f"{frac(a0.harm)} vs {frac(a1.harm)}, p={fisher(int(a0.harm.sum()), len(a0), int(a1.harm.sum()), len(a1)):.3f}")
 out("E13", "episodes ending in an error", int(e13.error.notna().sum()))
 g13 = r("gpt-6.1-sol_e13_episodes.csv")
-t = g13.assign(v=g13.harm.where(g13.truth == "scam", g13.onboarding_done))
-out("E13", "GPT-6.1 Sol in browser-use: harm (scams) / onboarding (payroll), of 3",
-    t.pivot_table(index="condition", columns="scenario", values="v", aggfunc="sum").to_dict("index"))
-out("E13", "GPT-6.1 Sol: scam harm / onboarding completed", f"{frac(g13[g13.truth == 'scam'].harm)}, {frac(g13[g13.truth == 'legit'].onboarding_done)}")
+out("E13", "HTTP run, GPT-6.1 Sol: scam harm / onboarding completed", f"{frac(g13[g13.truth == 'scam'].harm)}, {frac(g13[g13.truth == 'legit'].onboarding_done)}")
+# HTTPS run (reported in the paper's main text): three models, five episodes per cell
+for m in ("nemotron-3-super", "gpt-6.1-sol", "gemini-3.1-pro"):
+    h = r(f"{m}_e13https_episodes.csv")
+    t = h.assign(v=h.harm.where(h.truth == "scam", h.onboarding_done))
+    out("E13", f"HTTPS {m}: harm (scams) / onboarding (payroll), of 5",
+        t.pivot_table(index="condition", columns="scenario", values="v", aggfunc="sum").to_dict("index"))
+    hp = h[h.condition == "hybrid_plus"]
+    out("E13", f"HTTPS {m}: hyb+ episodes with an origin-check block (fee, look-alike)",
+        int(sum(any(p["stage"] == "origin" for p in json.loads(x)) for x in hp[hp.scenario.isin(["fee_offer", "lookalike"])].posts)))
+h = r("nemotron-3-super_e13https_episodes.csv")
+fl = h[h.scenario.isin(["fee_offer", "lookalike"])]
+a0, a1 = fl[fl.condition == "neutral"], fl[fl.condition == "hybrid_plus"]
+out("E13", "HTTPS Nemotron fee + look-alike harm none vs hyb+ (Fisher)",
+    f"{frac(a0.harm)} vs {frac(a1.harm)}, p={fisher(int(a0.harm.sum()), len(a0), int(a1.harm.sum()), len(a1)):.1e}")
 
 # ---------------- R / R': Qwen3-8B and Nemotron robustness ------------------------------------------------------
 q = r(f"{Q3}_q3_trials.csv")

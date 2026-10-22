@@ -2,7 +2,7 @@
 
 Anonymous artifact for the WWW 2027 submission *"Knowing Is Not Doing: Open-Weight LLM Job-Search Agents Act on Employment Scams Their Own Models Flag"*.
 
-It contains the experiment code, the anonymized real-message corpus, every agent trial and browser-episode log behind the paper's 13,544 trials (E1–E13, R, R′, ICP), the standalone "knowing" probes, and the analysis that regenerates all numbers and figures in the paper.
+It contains the experiment code, the anonymized real-message corpus, every agent trial and browser-episode log behind the paper's 13,664 trials (E1–E13, R, R′, ICP), the standalone "knowing" probes, and the analysis that regenerates all numbers and figures in the paper.
 
 ## Layout
 
@@ -17,6 +17,7 @@ experiments/   one script per experiment (Jupyter-style "# %%" cells; run as a n
   e9b_e5b_e13_kaggle.ipynb        E9b (false video-interview claim vs. the FBI rule), E5b (new real messages; template in
                                   data/real_messages/), E13 (browser-use in Chromium behind a local proxy that hosts the
                                   sites and runs the hybrid+ guard on every POST). Built on e6_frontier_api.py.
+  e13_https_kaggle.ipynb          E13 as reported: the same harness with every site served over HTTPS (proxy terminates TLS)
   notebooks/README.md             which data/ files hold E3'/E7, E8, E9, E10 (R'), E11, E12, ICP and R (same harness as e6)
 analysis/
   paper_stats.py                  all paper numbers -> results/stats.json, figures -> results/figures/
@@ -86,7 +87,8 @@ Fixed settings: seed 42; 60 fraudulent + 180 legitimate postings matched on entr
 | `e11_guard_*.csv` | E11 | guard models judged offline on the same 130 proposed actions (`block*` columns) |
 | `{model}_e12_attack.csv`, `_ablation_trials.csv`, `_transfer_trials.csv` | E12 | message rewriting against the gate (log per round), instruction/tool ablations, transfer |
 | `nemotron-3-super_e13_episodes.csv` | E13 | browser-use episodes; `posts` = every POST seen by the guard with its decision and stage |
-| `gpt-6.1-sol_e13_episodes.csv` | E13 | same, GPT-6.1 Sol (3 episodes per cell) |
+| `gpt-6.1-sol_e13_episodes.csv` | E13 | same, GPT-6.1 Sol (3 episodes per cell); this and the Nemotron file above are the earlier run over plain HTTP |
+| `*_e13https_episodes.csv` | E13 | the run reported in the main text: all sites over HTTPS, Nemotron-3-Super, GPT-6.1 Sol and Gemini 3.1 Pro, 5 episodes per cell. Gemini's hybrid_plus look-alike, own-domain and payroll episodes come from a re-run after an OpenRouter credit stop had emptied the first attempt |
 | `pilots_and_failed_runs/` | – | pilots and failed runs (e.g. Claude through browser-use: no valid action); not used for any number |
 
 
