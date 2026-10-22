@@ -13,4 +13,4 @@ The Kaggle working notebooks for the runs below are not included here. They reus
 | ICP (local models) | `*_icp_*` |
 | E11 (policy in the prompt; guard models) | `*_e11_*`, `e11_guard_*` |
 | E12 (gate-aware attacker, ablations) | `*_e12_*` |
-| E13 (browser-use) | `nemotron-3-super_e13_episodes.csv` |
+| E13 (browser-use) | `nemotron-3-super_e13_episodes.csv`, `gpt-6.1-sol_e13_episodes.csv` |

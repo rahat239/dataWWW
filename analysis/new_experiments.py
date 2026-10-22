@@ -1,5 +1,5 @@
 """Recompute the paper's numbers for the experiments added after the first release:
-ICP, E3'/E7 (Nemotron), E8, E9, E9b, E11, E12, E13, and R/R' (Qwen3-8B, Nemotron).
+ICP, E3'/E7 (Nemotron), E8, E9, E9b, E11, E12, E13 (Nemotron, GPT-6.1), and R/R' (Qwen3-8B, Nemotron).
 
     python analysis/new_experiments.py data
 
@@ -138,6 +138,11 @@ a0, a1 = fl[fl.condition == "neutral"], fl[fl.condition == "hybrid_plus"]
 out("E13", "fee + look-alike harm none vs hyb+ (Fisher)",
     f"{frac(a0.harm)} vs {frac(a1.harm)}, p={fisher(int(a0.harm.sum()), len(a0), int(a1.harm.sum()), len(a1)):.3f}")
 out("E13", "episodes ending in an error", int(e13.error.notna().sum()))
+g13 = r("gpt-6.1-sol_e13_episodes.csv")
+t = g13.assign(v=g13.harm.where(g13.truth == "scam", g13.onboarding_done))
+out("E13", "GPT-6.1 Sol in browser-use: harm (scams) / onboarding (payroll), of 3",
+    t.pivot_table(index="condition", columns="scenario", values="v", aggfunc="sum").to_dict("index"))
+out("E13", "GPT-6.1 Sol: scam harm / onboarding completed", f"{frac(g13[g13.truth == 'scam'].harm)}, {frac(g13[g13.truth == 'legit'].onboarding_done)}")
 
 # ---------------- R / R': Qwen3-8B and Nemotron robustness ------------------------------------------------------
 q = r(f"{Q3}_q3_trials.csv")

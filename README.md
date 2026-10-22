@@ -2,7 +2,7 @@
 
 Anonymous artifact for the WWW 2027 submission *"Knowing Is Not Doing: Open-Weight LLM Job-Search Agents Act on Employment Scams Their Own Models Flag"*.
 
-It contains the experiment code, the anonymized real-message corpus, every agent trial and browser-episode log behind the paper's 13,520 trials (E1–E13, R, R′, ICP), the standalone "knowing" probes, and the analysis that regenerates all numbers and figures in the paper.
+It contains the experiment code, the anonymized real-message corpus, every agent trial and browser-episode log behind the paper's 13,544 trials (E1–E13, R, R′, ICP), the standalone "knowing" probes, and the analysis that regenerates all numbers and figures in the paper.
 
 ## Layout
 
@@ -86,6 +86,7 @@ Fixed settings: seed 42; 60 fraudulent + 180 legitimate postings matched on entr
 | `e11_guard_*.csv` | E11 | guard models judged offline on the same 130 proposed actions (`block*` columns) |
 | `{model}_e12_attack.csv`, `_ablation_trials.csv`, `_transfer_trials.csv` | E12 | message rewriting against the gate (log per round), instruction/tool ablations, transfer |
 | `nemotron-3-super_e13_episodes.csv` | E13 | browser-use episodes; `posts` = every POST seen by the guard with its decision and stage |
+| `gpt-6.1-sol_e13_episodes.csv` | E13 | same, GPT-6.1 Sol (3 episodes per cell) |
 | `pilots_and_failed_runs/` | – | pilots and failed runs (e.g. Claude through browser-use: no valid action); not used for any number |
 
 
