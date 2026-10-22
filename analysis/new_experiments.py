@@ -79,7 +79,7 @@ out("E9", "real scam harm / legitimate real trials blocked",
 
 # ---------------- E9b: false video-interview claim -------------------------------------------------------------
 e9b = pd.concat([r(f"{m}_e9b_trials.csv").assign(model=m) for m in (NEM, Q3, "claude-sonnet-5.5")])
-e9b["variant"] = e9b.scenario.str.split("|").str[1]
+e9b = e9b.assign(variant=e9b.scenario.str.split("|").str[1])
 for (c, var), g in e9b.groupby(["condition", "variant"]):
     out("E9b", f"{c:15s} {var:8s} harm (all models)", frac(g.harm))
 out("E9b", "per model x condition x variant",
