@@ -1,0 +1,10 @@
+set,gate,harm,scam_trials,legit_sensitive_blocked,legit_sensitive,onboarding_completed
+ctrl,none,64,64,0,33,32.0
+ctrl,state_probe,5,64,2,33,30.0
+ctrl,verbal_self_check,13,64,0,33,32.0
+e7,none,24,24,0,0,0.0
+e7,state_probe,5,24,0,0,0.0
+e7,verbal_self_check,4,24,0,0,0.0
+real,none,21,45,0,1,
+real,state_probe,1,45,1,1,
+real,verbal_self_check,0,45,0,1,

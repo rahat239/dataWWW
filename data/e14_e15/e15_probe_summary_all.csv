@@ -1,0 +1,7 @@
+model,probe,layer,n_layers,val_auc,test_auc,test_auc_median_upper_half,val_pair_auc,test_harmed_scam_trials,test_harmed_flagged,test_legit,test_legit_flagged,test_scam_flagged,test_scam,verbal_pair_accuracy,test_verbal_auc
+qwen3-8b,agent,25,36,0.855,0.938,0.884,0.637,21,21,10,2,42,45,0.667,0.7
+qwen3-8b,standalone,18,36,0.775,0.827,0.95,0.613,21,21,10,4,39,45,0.667,0.7
+qwen2.5-7b-instruct,agent,22,28,0.84,0.833,0.82,0.595,13,11,10,5,35,45,0.562,0.889
+qwen2.5-7b-instruct,standalone,1,28,0.824,0.691,0.692,0.792,13,13,10,6,40,45,0.562,0.889
+gemma-2-9b-it,agent,23,42,0.964,0.976,0.911,0.905,8,5,10,0,25,45,0.5,0.65
+gemma-2-9b-it,standalone,6,42,0.906,0.88,0.409,0.806,8,5,10,0,28,45,0.5,0.65

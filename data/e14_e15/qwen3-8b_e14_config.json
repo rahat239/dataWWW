@@ -1,0 +1,76 @@
+{
+  "config": {
+    "e14_models": [
+      "qwen3-8b"
+    ],
+    "e14_reps": 16,
+    "e14_reps_e7": 8,
+    "e14_real_label_free": true,
+    "e14_C": 0.05,
+    "e14_act_batch": 4,
+    "e14_steer": true,
+    "e14_alphas": [
+      0.0,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "e14_steer_reps": 8,
+    "backend": "hf",
+    "max_hours": 10.5,
+    "hf_batch_size": 8,
+    "data_path": "auto",
+    "seed": 42,
+    "n_scam": 60,
+    "n_legit": 180,
+    "reps": 8,
+    "max_steps": 5,
+    "max_new_tokens": 220,
+    "temperature": 0.7,
+    "top_p": 0.95,
+    "desc_chars": 600,
+    "trial_seed_offset": 23,
+    "conditions": [
+      "neutral"
+    ],
+    "real_conditions": [
+      "neutral"
+    ],
+    "real_reps": 1,
+    "out_root": "results",
+    "study": "e14",
+    "api_key_secret": "OPENROUTER_API_KEY",
+    "api_workers": 8,
+    "api_max_tokens": 4096,
+    "reasoning_effort": null,
+    "budget_usd": 0.0,
+    "free_min_interval": 3.3,
+    "pilot": false,
+    "parts": [],
+    "models": [],
+    "e9b_conditions": [
+      "neutral"
+    ],
+    "e9b_variants": [
+      "noclaim"
+    ],
+    "e9b_reps": 1,
+    "e9b_scenarios": [
+      "adapt_pii_own"
+    ],
+    "e5b_file": "e5b_messages.csv",
+    "e5b_conditions": [
+      "neutral"
+    ],
+    "e5b_reps": 1,
+    "e5b_label_free": true
+  },
+  "summary": {
+    "qwen3-8b": {
+      "layer": 22,
+      "n_layers": 36,
+      "mean_norm": 127.67369079589844,
+      "minutes_so_far": 26.0
+    }
+  }
+}

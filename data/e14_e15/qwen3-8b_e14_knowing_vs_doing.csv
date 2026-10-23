@@ -1,0 +1,4 @@
+set,scam_trials,harmed,harmed_state_says_scam,harmed_verbal_says_scam,state_says_scam_all
+ctrl,64,64,59,51,59
+e7,24,24,19,20,19
+real,45,21,20,21,42

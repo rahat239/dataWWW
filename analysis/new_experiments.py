@@ -1,5 +1,5 @@
 """Recompute the paper's numbers for the experiments added after the first release:
-ICP, E3'/E7 (Nemotron), E8, E9, E9b, E11, E12, E13 (Nemotron, GPT-6.1), and R/R' (Qwen3-8B, Nemotron).
+ICP, E3'/E7 (Nemotron), E8, E9, E9b, E11, E12, E13 (Nemotron, GPT-6.1, Gemini 3.1), E14, E15, and R/R' (Qwen3-8B, Nemotron).
 
     python analysis/new_experiments.py data
 
@@ -154,6 +154,27 @@ fl = h[h.scenario.isin(["fee_offer", "lookalike"])]
 a0, a1 = fl[fl.condition == "neutral"], fl[fl.condition == "hybrid_plus"]
 out("E13", "HTTPS Nemotron fee + look-alike harm none vs hyb+ (Fisher)",
     f"{frac(a0.harm)} vs {frac(a1.harm)}, p={fisher(int(a0.harm.sum()), len(a0), int(a1.harm.sum()), len(a1)):.1e}")
+
+# ---------------- E14 / E15: inside the agent, and a fine-tune ---------------------------------------------------
+X = os.path.join(D, "e14_e15")
+st = pd.read_csv(os.path.join(X, "qwen3-8b_e14_steer_trials.csv"))
+for a, g in st.groupby("alpha"):
+    out("E14", f"steering alpha={a}: E3 scam harm / real scam harm",
+        f"{frac(g[(g.set == 'ctrl') & (g.truth == 'scam')].harm)}, {frac(g[(g.set == 'real') & (g.truth == 'scam')].harm)}")
+S15 = pd.read_csv(os.path.join(X, "e15_probe_summary_all.csv"))
+for _, r_ in S15[S15.probe == "agent"].iterrows():
+    out("E15", f"{r_.model}: real-message AUROC agent state vs verbal; harmed flagged; legit flagged",
+        f"{r_.test_auc} vs {r_.test_verbal_auc}; {r_.test_harmed_flagged}/{r_.test_harmed_scam_trials}; "
+        f"{r_.test_legit_flagged}/{r_.test_legit}; pair AUROC {r_.val_pair_auc}, verbal pair acc {r_.verbal_pair_accuracy}")
+ev = pd.read_csv(os.path.join(X, "qwen3-8b_e15_eval_trials.csv"))
+for (arm, st_), g in ev.groupby(["arm", "set"]):
+    out("E15", f"fine-tune {arm:7s} {st_:8s}: harm / legit ok / warns",
+        f"{frac(g[g.truth == 'scam'].harm)}, {int(g.legit_ok.sum())}/{int((g.truth == 'legit').sum())}, {int(g.warns_user.sum())}")
+b, t_ = ev[ev.arm == "base"], ev[ev.arm == "trained"]
+for st_ in ("real", "e7", "e3_test"):
+    bb, tt = b[(b.set == st_) & (b.truth == "scam")], t_[(t_.set == st_) & (t_.truth == "scam")]
+    out("E15", f"fine-tune {st_} harm base vs trained (Fisher)",
+        f"{frac(bb.harm)} vs {frac(tt.harm)}, p={fisher(int(bb.harm.sum()), len(bb), int(tt.harm.sum()), len(tt)):.1e}")
 
 # ---------------- R / R': Qwen3-8B and Nemotron robustness ------------------------------------------------------
 q = r(f"{Q3}_q3_trials.csv")

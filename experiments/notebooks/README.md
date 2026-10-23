@@ -14,3 +14,4 @@ The Kaggle working notebooks for the runs below are not included here. They reus
 | E11 (policy in the prompt; guard models) | `*_e11_*`, `e11_guard_*` |
 | E12 (gate-aware attacker, ablations) | `*_e12_*` |
 | E13 (browser-use) | `*_e13https_episodes.csv` (HTTPS, reported); `nemotron-3-super_e13_episodes.csv`, `gpt-6.1-sol_e13_episodes.csv` (earlier HTTP run) |
+| E14, E15 (inside the agent; fine-tune) | `e14_e15/` (notebooks: `../e14_inside_the_gap_kaggle.ipynb`, `../e15_probes_and_finetune_kaggle.ipynb`) |
