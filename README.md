@@ -2,7 +2,7 @@
 
 Anonymous artifact for the WWW 2027 submission *"Knowing Is Not Doing: Open-Weight LLM Job-Search Agents Act on Employment Scams Their Own Models Flag"*.
 
-It contains the experiment code, the anonymized real-message corpus, every agent trial and browser-episode log behind the paper's 16,852 trials (E1–E13, R, R′, ICP), the standalone "knowing" probes, and the analysis that regenerates all numbers and figures in the paper.
+It contains the experiment code, the anonymized real-message corpus, every agent trial and browser-episode log behind the paper's 16,852 agent trials and probes (E1–E16, R, R′, ICP), the standalone "knowing" probes, and the analysis that regenerates all numbers and figures in the paper.
 
 ## Layout
 
