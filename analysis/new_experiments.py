@@ -166,15 +166,17 @@ for _, r_ in S15[S15.probe == "agent"].iterrows():
     out("E15", f"{r_.model}: real-message AUROC agent state vs verbal; harmed flagged; legit flagged",
         f"{r_.test_auc} vs {r_.test_verbal_auc}; {r_.test_harmed_flagged}/{r_.test_harmed_scam_trials}; "
         f"{r_.test_legit_flagged}/{r_.test_legit}; pair AUROC {r_.val_pair_auc}, verbal pair acc {r_.verbal_pair_accuracy}")
-ev = pd.read_csv(os.path.join(X, "qwen3-8b_e15_eval_trials.csv"))
-for (arm, st_), g in ev.groupby(["arm", "set"]):
-    out("E15", f"fine-tune {arm:7s} {st_:8s}: harm / legit ok / warns",
-        f"{frac(g[g.truth == 'scam'].harm)}, {int(g.legit_ok.sum())}/{int((g.truth == 'legit').sum())}, {int(g.warns_user.sum())}")
-b, t_ = ev[ev.arm == "base"], ev[ev.arm == "trained"]
-for st_ in ("real", "e7", "e3_test"):
-    bb, tt = b[(b.set == st_) & (b.truth == "scam")], t_[(t_.set == st_) & (t_.truth == "scam")]
-    out("E15", f"fine-tune {st_} harm base vs trained (Fisher)",
-        f"{frac(bb.harm)} vs {frac(tt.harm)}, p={fisher(int(bb.harm.sum()), len(bb), int(tt.harm.sum()), len(tt)):.1e}")
+for run, fn in (("qwen3-8b seed 0", "qwen3-8b_e15_eval_trials.csv"), ("qwen3-8b seed 1", "qwen3-8b_seed1_e15_eval_trials.csv"),
+                ("gemma-2-9b seed 0", "gemma-2-9b-it_seed0_e15_eval_trials.csv")):
+    ev = pd.read_csv(os.path.join(X, fn))
+    for (arm, st_), g in ev.groupby(["arm", "set"]):
+        out("E15", f"fine-tune {run}, {arm:7s} {st_:8s}: harm / legit ok / warns",
+            f"{frac(g[g.truth == 'scam'].harm)}, {int(g.legit_ok.sum())}/{int((g.truth == 'legit').sum())}, {int(g.warns_user.sum())}")
+    b, t_ = ev[ev.arm == "base"], ev[ev.arm == "trained"]
+    for st_ in ("real", "e7", "e3_test"):
+        bb, tt = b[(b.set == st_) & (b.truth == "scam")], t_[(t_.set == st_) & (t_.truth == "scam")]
+        out("E15", f"fine-tune {run}, {st_} harm base vs trained (Fisher)",
+            f"{frac(bb.harm)} vs {frac(tt.harm)}, p={fisher(int(bb.harm.sum()), len(bb), int(tt.harm.sum()), len(tt)):.1e}")
 
 # ---------------- R / R': Qwen3-8B and Nemotron robustness ------------------------------------------------------
 q = r(f"{Q3}_q3_trials.csv")

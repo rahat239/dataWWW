@@ -1,0 +1,9 @@
+arm,set,harm,legit_ok,warns
+base,e3_test,32/32,24/24,0
+base,e7,21/24,0/0,0
+base,para,10/12,8/8,0
+base,real,16/45,6/10,7
+trained,e3_test,0/32,22/24,24
+trained,e7,7/24,0/0,16
+trained,para,0/12,7/8,6
+trained,real,0/45,6/10,30

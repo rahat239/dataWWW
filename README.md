@@ -2,7 +2,7 @@
 
 Anonymous artifact for the WWW 2027 submission *"Knowing Is Not Doing: Open-Weight LLM Job-Search Agents Act on Employment Scams Their Own Models Flag"*.
 
-It contains the experiment code, the anonymized real-message corpus, every agent trial and browser-episode log behind the paper's 15,278 trials (E1–E13, R, R′, ICP), the standalone "knowing" probes, and the analysis that regenerates all numbers and figures in the paper.
+It contains the experiment code, the anonymized real-message corpus, every agent trial and browser-episode log behind the paper's 15,898 trials (E1–E13, R, R′, ICP), the standalone "knowing" probes, and the analysis that regenerates all numbers and figures in the paper.
 
 ## Layout
 
@@ -91,7 +91,7 @@ Fixed settings: seed 42; 60 fraudulent + 180 legitimate postings matched on entr
 | `nemotron-3-super_e13_episodes.csv` | E13 | browser-use episodes; `posts` = every POST seen by the guard with its decision and stage |
 | `gpt-6.1-sol_e13_episodes.csv` | E13 | same, GPT-6.1 Sol (3 episodes per cell); this and the Nemotron file above are the earlier run over plain HTTP |
 | `*_e13https_episodes.csv` | E13 | the run reported in the main text: all sites over HTTPS, Nemotron-3-Super, GPT-6.1 Sol and Gemini 3.1 Pro, 5 episodes per cell. Gemini's hybrid_plus look-alike, own-domain and payroll episodes come from a re-run after an OpenRouter credit stop had emptied the first attempt |
-| `e14_e15/` | E14, E15 | probe and steering results (Qwen3-8B), probes with paraphrase validation and real-message test (Qwen3-8B, Qwen2.5-7B, Gemma-2-9B), and the QLoRA fine-tune's evaluation trials (base vs. adapter). Activations (~110 MB per model) and the adapter weights are not included; the notebooks regenerate them |
+| `e14_e15/` | E14, E15 | probe and steering results (Qwen3-8B), probes with paraphrase validation and real-message test (Qwen3-8B, Qwen2.5-7B, Gemma-2-9B), and the QLoRA fine-tunes' evaluation trials (base vs. adapter; Qwen3-8B seeds 0 and 1, Gemma-2-9B). Activations (~110 MB per model) and the adapter weights are not included; the notebooks regenerate them |
 | `pilots_and_failed_runs/` | – | pilots and failed runs (e.g. Claude through browser-use: no valid action); not used for any number |
 
 
