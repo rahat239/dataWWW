@@ -7,6 +7,7 @@ Prints one line per reported number: section, quantity, value. Needs pandas only
 """
 import sys, os, json
 from math import comb
+import numpy as np
 import pandas as pd
 
 D = sys.argv[1] if len(sys.argv) > 1 else "data"
@@ -177,6 +178,21 @@ for run, fn in (("qwen3-8b seed 0", "qwen3-8b_e15_eval_trials.csv"), ("qwen3-8b 
         bb, tt = b[(b.set == st_) & (b.truth == "scam")], t_[(t_.set == st_) & (t_.truth == "scam")]
         out("E15", f"fine-tune {run}, {st_} harm base vs trained (Fisher)",
             f"{frac(bb.harm)} vs {frac(tt.harm)}, p={fisher(int(bb.harm.sum()), len(bb), int(tt.harm.sum()), len(tt)):.1e}")
+
+ev = pd.read_csv(os.path.join(X, "qwen3-8b_e16_eval_trials.csv"))
+for (arm, cond, st_), g in ev.groupby(["arm", "condition", "set"]):
+    out("E16", f"{arm:4s} {cond:11s} {st_:8s}: harm / legit ok / trials with a block",
+        f"{frac(g[g.truth == 'scam'].harm)}, {int(np.nansum(g.legit_ok))}/{int((g.truth == 'legit').sum())}, {int((g.blocked > 0).sum())}")
+for arm in ("base", "act", "ind"):
+    g = ev[(ev.arm == arm) & (ev.condition == "hybrid_plus")]
+    out("E16", f"{arm} behind hyb+: scam harm over all four sets; trials with a block",
+        f"{frac(g[g.truth == 'scam'].harm)}, {int((g.blocked > 0).sum())}")
+for arm in ("act", "ind"):
+    g = ev[(ev.arm == arm) & (ev.condition == "neutral")]
+    out("E16", f"{arm} no gate: E7 payroll harm; E3 payroll completed; E7-video payroll completed",
+        f"{int(g[(g.set == 'e7') & (g.scenario == 'adapt_pii_own')].harm.sum())}/8, "
+        f"{int(g[(g.set == 'e3_test') & (g.scenario == 'payroll_offer')].legit_ok.sum())}/8, "
+        f"{int(g[(g.set == 'e7_video') & (g.truth == 'legit')].legit_ok.sum())}/8")
 
 # ---------------- R / R': Qwen3-8B and Nemotron robustness ------------------------------------------------------
 q = r(f"{Q3}_q3_trials.csv")
